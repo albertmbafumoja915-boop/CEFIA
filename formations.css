@@ -1,0 +1,64 @@
+.ligne-filiere {
+    display: flex; /* met image et texte côte à côte */
+    align-items: center; /* centre verticalement */
+    gap: 30px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ligne-filiere img {
+    width: 40%; /* l'image prend 40% */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.texte-filiere {
+    width: 60%; 
+}
+
+.texte-filiere h2 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texte-filiere p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* image à droite sur les lignes paires */
+.ligne-filiere.inverse {
+    flex-direction: row-reverse;
+}
+
+/* SUR TELEPHONE : repasser en colonne */
+@media (max-width: 768px) {
+    .ligne-filiere, .ligne-filiere.inverse {
+        flex-direction: column;
+    }
+    .ligne-filiere img, .texte-filiere {
+        width: 100%;
+    }
+}
+nav a{
+    color: white;
+    padding: 10px 20px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    background-color: #0af;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+body{
+    background-color: rgb(236, 225, 212);
+}

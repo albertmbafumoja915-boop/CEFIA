@@ -1,0 +1,72 @@
+.cefia-histoire {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.titre-section {
+  text-align: center;
+  font-size: 32px;
+  color: #0A3D62; /* Bleu CEFIA */
+  margin-bottom: 10px;
+}
+.sous-titre {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+.timeline {
+  border-left: 3px solid #F39C12; /* Jaune CEFIA */
+  padding-left: 30px;
+}
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -39px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #F39C12;
+  border-radius: 50%;
+}
+.date {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0A3D62;
+  margin-bottom: 8px;
+}
+.contenu h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.contenu p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .timeline { padding-left: 20px; }
+  .timeline-item::before { left: -29px; }
+}
+nav a{
+    color: white;
+    padding: 10px 20px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    background-color: #0af;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+body{
+    background-color: rgb(216, 219, 241);
+}

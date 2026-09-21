@@ -1,0 +1,58 @@
+/* ===== PAGE ALBUM ===== */
+.album-section {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.album-titre {
+    text-align: center;
+    color: #003366;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00aaff;
+    padding-bottom: 10px;
+}
+
+.grille-album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.carte-album {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.carte-album:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.carte-album img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carte-album .legende {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #003366;
+    background: #f0f8ff;
+}
+nav a{
+    color: white;
+    padding: 10px 20px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    background-color: #0af;
+    border-radius: 5px;
+    transition: 0.3s;
+}
